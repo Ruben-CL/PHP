@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficheros</title>
+</head>
+<body>
+    <h1>Envío de ficheros</h1>
+    <p>Seleccione las imagenes:</p><br>
+    <form enctype="multipart/form-data" method="post" action="ficherosimg.php">
+        Seleccione el archivo a subir  <input type="hidden" name="MAX_FILE_SIZE" value="200000" /> 
+        <input name="archivos[]" type="file" accept="image/png, image/jpeg" multiple> <br />
+        <input type="submit" value="Subir">
+        <input type="reset"  value="Borrar">
+    </form>
+        
+    
+</body>
+</html>
+
